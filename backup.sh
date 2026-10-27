@@ -6,6 +6,14 @@ SUMBER="input"
 TUJUAN="backup"
 LOG="backup.log"
 
+# Baca konfigurasi jika file tersedia
+CONFIG="${CONFIG:-backup.conf}"
+
+if [ -f "$CONFIG" ]; then
+    # shellcheck disable=SC1090
+    source "$CONFIG"
+fi
+
 # Mencatat pesan ke terminal dan file log
 log() {
     local pesan="$1"
