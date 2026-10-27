@@ -1,0 +1,4 @@
+# Konfigurasi contoh backup
+SUMBER="input"
+TUJUAN="backup"
+LOG="backup.log"
