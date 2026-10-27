@@ -1,0 +1,8 @@
+# Arsip backup lokal
+/backup/*.tar.gz
+
+# Log lokal
+/backup.log
+
+# Folder pemulihan
+/restore/
